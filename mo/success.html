@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Success Page</title>
+    <style>
+      body {
+        background-color: rgb(2, 2, 59);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        padding-top: 150px;
+        display: flex;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .container {
+        display: flex;
+        width: 35%;
+        height: 300px;
+        border: 1px;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 10px;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      }
+      .checkmark-img {
+        width: 80px;
+        background-color: darkblue;
+      }
+      .success-msg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .main-msg {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .description {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .close-btn {
+        background-color: rgb(2, 2, 59);
+        color: white;
+        padding: 10px 30px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: opacity 0.15s;
+      }
+      .close-btn:hover {
+        opacity: 1;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <img class="checkmark-img" src="images/checkmark5.jpg" />
+    </div>
+
+    <div class="success-msg">
+      <p class="main-msg">LOGIN SUCCESSFUL</p>
+      <p class="description">
+        You have successfully signed into your account. You can close this
+        window and continue using the product
+      </p>
+    </div>
+
+    <div>
+      <button
+        class="close-btn"
+        type="button"
+        onclick="window.location.href='/index-mod.html'">
+        CLOSE WINDOW
+      </button>
+    </div>
+  </div>
+</body>
+</html>

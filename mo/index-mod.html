@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <style>
+      body {
+    font-family: Arial;
+    /* background-image: url('images/page-bg.jpg'); */
+    background-image: url('https://images.unsplash.com/photo-1689718107045-513b35f1a356?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8');
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.1);;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    border: 2px rgb(93, 90, 90);
+    height: 450px;
+    padding-left: 20px;
+    box-shadow: 5px 5px 5px(rgba 93, 90, 90, 0);
+    border-style: inherit;
+}
+.credentials-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+.input-bar {
+    /* background-color: rgb(37, 36, 36); */
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.input-bar::placeholder {
+    color: #90A4AE;
+}
+.input-bar:focus{
+    color: white;
+}
+.login-text {
+    text-align: center;
+    font-size: 25px;
+}
+.log-in-btn-container {
+    margin-top: 40px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.log-in-btn {
+    background-color: #00D9FF;
+    color: black;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    width: 290px;
+    padding: 7px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    width: 98%;
+    border-style: inherit;
+}
+.log-in-btn:hover {
+    opacity: 0.9;
+}
+
+.btn-image {
+        width: 20px;
+        height: 20px;
+        background-color: #777;
+        border-radius: 3px;
+        justify-content: center;
+        align-items: center;
+}
+.logs {
+    display: flex;
+    column-gap: 20px;
+    }
+.media-login{
+    display: flex;
+    padding: 5px 25px;   
+    background-color: grey; 
+    column-gap: 10px;
+    border-radius: 3px;
+    border: none;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;   
+    transition: opacity 0.15s; 
+    width: 360px;
+    opacity: 0.8;
+}
+.media-login:hover {
+    opacity: 1;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-text">
+        <p>Login Here</p>
+      </div>
+
+      <!-- FORM STARTS HERE -->
+      <form method="post" action="/login">
+        <div class="credentials-container">
+          <p>Username</p>
+          <input
+            class="input-bar"
+            type="text"
+            name="username"
+            placeholder="Email or Phone"
+            required
+          />
+        </div>
+
+        <div class="credentials-container">
+          <p>Password</p>
+          <input
+            class="input-bar"
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+
+        <div class="log-in-btn-container">
+          <button class="log-in-btn" type="submit">Log In</button>
+        </div>
+      </form>
+      <!-- FORM ENDS HERE -->
+    </div>
+  </body>
+</html>
