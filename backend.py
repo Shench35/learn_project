@@ -10,7 +10,7 @@ templates = Jinja2Templates(directory= BASE_DIR)
 
 @app.get("/", response_class=HTMLResponse)
 def learn(request: Request):
-    return templates.TemplateResponse("index-mod.html",{"request": request})
+    return templates.TemplateResponse("index.html",{"request": request})
 
 @app.post("/login",response_class= HTMLResponse)
 def learn_login(request: Request, username:str = Form(...), password: str = Form(...)):
